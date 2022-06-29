@@ -24,7 +24,7 @@ while True:
     with sr.Microphone() as source:
 
         r.adjust_for_ambient_noise(source)
-        print("OPTIONS:\n 1.Convert Speech to text\n2.Search on web using wikipedia\n3.Search music on YOUTUBE\n")
+        #print("OPTIONS:\n 1.Convert Speech to text\n2.Search on web using wikipedia\n3.Search music on YOUTUBE\n")
         print("Say something!")
         audio = r.listen(source)
         print("You said "+ r.recognize_google(audio))
